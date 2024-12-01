@@ -1,0 +1,2204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6eb648148e5fcd0feaa6b488876fd489 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6eb648148e5fcd0feaa6b488876fd489" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6eb648148e5fcd0feaa6b488876fd489 = L.map(
+                "map_6eb648148e5fcd0feaa6b488876fd489",
+                {
+                    center: [32.770313690184224, -117.18573315187017],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9e1834497bfffc9fe6e00ffd89d4e3a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f9e1834497bfffc9fe6e00ffd89d4e3a.addTo(map_6eb648148e5fcd0feaa6b488876fd489);
+        
+    
+            var marker_cluster_772e7cebb05751c85d2340e726b01480 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_5f6a88c7fc7be2fc83a5609f30e9acd8 = L.circleMarker(
+                [32.80311152457956, -117.09071484709395],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_46cdc9b170f8ddfa212ecf279c4667e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_98ae03638f497ec08715cbe78a8aec39 = $(`<div id="html_98ae03638f497ec08715cbe78a8aec39" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Allied Gardens<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 23     </div>`)[0];
+                popup_46cdc9b170f8ddfa212ecf279c4667e1.setContent(html_98ae03638f497ec08715cbe78a8aec39);
+            
+        
+
+        circle_marker_5f6a88c7fc7be2fc83a5609f30e9acd8.bindPopup(popup_46cdc9b170f8ddfa212ecf279c4667e1)
+        ;
+
+        
+    
+    
+            var circle_marker_a473d0eb7369e46fe5edbbdb8d02aaca = L.circleMarker(
+                [32.69341712253175, -117.06447432101162],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_18773f7a862731249c3c28c8b5307d20 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4bf56b0235c0d802fd33dafe26e91ec = $(`<div id="html_b4bf56b0235c0d802fd33dafe26e91ec" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Alta Vista<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 12     </div>`)[0];
+                popup_18773f7a862731249c3c28c8b5307d20.setContent(html_b4bf56b0235c0d802fd33dafe26e91ec);
+            
+        
+
+        circle_marker_a473d0eb7369e46fe5edbbdb8d02aaca.bindPopup(popup_18773f7a862731249c3c28c8b5307d20)
+        ;
+
+        
+    
+    
+            var circle_marker_bb922a0ac51f310ff9d6680c27da6da9 = L.circleMarker(
+                [32.58264, -117.00442000000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_f320d63fbd82da95af3b4d1ec2ae2362 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f06a09f3065c00bb872c86a78248f321 = $(`<div id="html_f06a09f3065c00bb872c86a78248f321" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Amphitheater And Water Park<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 2     </div>`)[0];
+                popup_f320d63fbd82da95af3b4d1ec2ae2362.setContent(html_f06a09f3065c00bb872c86a78248f321);
+            
+        
+
+        circle_marker_bb922a0ac51f310ff9d6680c27da6da9.bindPopup(popup_f320d63fbd82da95af3b4d1ec2ae2362)
+        ;
+
+        
+    
+    
+            var circle_marker_b3e9b4d8b5107dd6a37b4a00f1700dc6 = L.circleMarker(
+                [32.71905749829992, -117.13755322091971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_5f2ef017087e137797d1e07117967276 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1c684bdd9a19557074dbec4bb7a985b8 = $(`<div id="html_1c684bdd9a19557074dbec4bb7a985b8" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Balboa Park<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 222     </div>`)[0];
+                popup_5f2ef017087e137797d1e07117967276.setContent(html_1c684bdd9a19557074dbec4bb7a985b8);
+            
+        
+
+        circle_marker_b3e9b4d8b5107dd6a37b4a00f1700dc6.bindPopup(popup_5f2ef017087e137797d1e07117967276)
+        ;
+
+        
+    
+    
+            var circle_marker_bb0d859698a44ea278177d02069e9a97 = L.circleMarker(
+                [32.69681464899193, -117.13953679957685],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_027f5532242d4bf64a6da532edf8e738 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e9b7c9a1631caec0b5b0262815c89bb2 = $(`<div id="html_e9b7c9a1631caec0b5b0262815c89bb2" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Bario Logan<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 22     </div>`)[0];
+                popup_027f5532242d4bf64a6da532edf8e738.setContent(html_e9b7c9a1631caec0b5b0262815c89bb2);
+            
+        
+
+        circle_marker_bb0d859698a44ea278177d02069e9a97.bindPopup(popup_027f5532242d4bf64a6da532edf8e738)
+        ;
+
+        
+    
+    
+            var circle_marker_77b8c3981b41eb87339e9782a58114e5 = L.circleMarker(
+                [32.82299570569585, -117.21512553474489],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_af98df972e83c180ecdf226a313c66c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8c32149d8e647bffaecc7ddf8782c4a1 = $(`<div id="html_8c32149d8e647bffaecc7ddf8782c4a1" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Bay Ho<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 97     </div>`)[0];
+                popup_af98df972e83c180ecdf226a313c66c0.setContent(html_8c32149d8e647bffaecc7ddf8782c4a1);
+            
+        
+
+        circle_marker_77b8c3981b41eb87339e9782a58114e5.bindPopup(popup_af98df972e83c180ecdf226a313c66c0)
+        ;
+
+        
+    
+    
+            var circle_marker_859e26d6e0d66989a0a23822b64b2ad3 = L.circleMarker(
+                [32.7922201415624, -117.20165274331445],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_248715f99732b7e48e6fe207dc38b99a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_85dad3a6f1ab85d3c1d317847b06a48c = $(`<div id="html_85dad3a6f1ab85d3c1d317847b06a48c" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Bay Park<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 190     </div>`)[0];
+                popup_248715f99732b7e48e6fe207dc38b99a.setContent(html_85dad3a6f1ab85d3c1d317847b06a48c);
+            
+        
+
+        circle_marker_859e26d6e0d66989a0a23822b64b2ad3.bindPopup(popup_248715f99732b7e48e6fe207dc38b99a)
+        ;
+
+        
+    
+    
+            var circle_marker_4f4f1f9bbd1fb00529858fb17bcd3871 = L.circleMarker(
+                [32.68900463307141, -117.03665138360161],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_fe34230deaf03eb80af97ce1b83d3f24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a87dee5255d85537a84d957b816fc5ee = $(`<div id="html_a87dee5255d85537a84d957b816fc5ee" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Bay Terrace<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 19     </div>`)[0];
+                popup_fe34230deaf03eb80af97ce1b83d3f24.setContent(html_a87dee5255d85537a84d957b816fc5ee);
+            
+        
+
+        circle_marker_4f4f1f9bbd1fb00529858fb17bcd3871.bindPopup(popup_fe34230deaf03eb80af97ce1b83d3f24)
+        ;
+
+        
+    
+    
+            var circle_marker_88353f2534e2c3ae624faba738270f6b = L.circleMarker(
+                [32.78879384921983, -117.1563760588],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_b2ed592deead31332cf307acb5b838f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa6bf631548ad77b6543c7096b2dc090 = $(`<div id="html_fa6bf631548ad77b6543c7096b2dc090" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Bird Land<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 19     </div>`)[0];
+                popup_b2ed592deead31332cf307acb5b838f4.setContent(html_fa6bf631548ad77b6543c7096b2dc090);
+            
+        
+
+        circle_marker_88353f2534e2c3ae624faba738270f6b.bindPopup(popup_b2ed592deead31332cf307acb5b838f4)
+        ;
+
+        
+    
+    
+            var circle_marker_2555dfc64c471d98bd3983742c1d5131 = L.circleMarker(
+                [32.66305, -117.010355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_7aaff3de48627b53cf42d1b6ee29a78b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a06045bdaeb32634c11d8612a1aac73 = $(`<div id="html_4a06045bdaeb32634c11d8612a1aac73" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Bonita Long Canyon<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 2     </div>`)[0];
+                popup_7aaff3de48627b53cf42d1b6ee29a78b.setContent(html_4a06045bdaeb32634c11d8612a1aac73);
+            
+        
+
+        circle_marker_2555dfc64c471d98bd3983742c1d5131.bindPopup(popup_7aaff3de48627b53cf42d1b6ee29a78b)
+        ;
+
+        
+    
+    
+            var circle_marker_93f5bd64b2878ffb255bd484ded08cc3 = L.circleMarker(
+                [32.97780395966954, -117.08117171726191],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_0ce6d366b7602b1f4fb23aa46bd5aa49 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b301e6e3d0c2e0bd93d225c8ef348c8b = $(`<div id="html_b301e6e3d0c2e0bd93d225c8ef348c8b" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Carmel Mountain<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 14     </div>`)[0];
+                popup_0ce6d366b7602b1f4fb23aa46bd5aa49.setContent(html_b301e6e3d0c2e0bd93d225c8ef348c8b);
+            
+        
+
+        circle_marker_93f5bd64b2878ffb255bd484ded08cc3.bindPopup(popup_0ce6d366b7602b1f4fb23aa46bd5aa49)
+        ;
+
+        
+    
+    
+            var circle_marker_3f4a31c87a85112e1b0e29ac9db6f965 = L.circleMarker(
+                [32.94272621855491, -117.2173540707218],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_5e28190f79cdb7beb52637416d330026 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4c46eca0cab4c58caa5df2c935a13d58 = $(`<div id="html_4c46eca0cab4c58caa5df2c935a13d58" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Carmel Valley<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 100     </div>`)[0];
+                popup_5e28190f79cdb7beb52637416d330026.setContent(html_4c46eca0cab4c58caa5df2c935a13d58);
+            
+        
+
+        circle_marker_3f4a31c87a85112e1b0e29ac9db6f965.bindPopup(popup_5e28190f79cdb7beb52637416d330026)
+        ;
+
+        
+    
+    
+            var circle_marker_22f0cba224670fba6a49ace38d40011b = L.circleMarker(
+                [32.70995342365207, -117.09302163739291],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_31a19016270241008d192922d8b532a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d9504b5bc4bbf1aeb411e4ccd875bb7 = $(`<div id="html_6d9504b5bc4bbf1aeb411e4ccd875bb7" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Chollas View<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 12     </div>`)[0];
+                popup_31a19016270241008d192922d8b532a1.setContent(html_6d9504b5bc4bbf1aeb411e4ccd875bb7);
+            
+        
+
+        circle_marker_22f0cba224670fba6a49ace38d40011b.bindPopup(popup_31a19016270241008d192922d8b532a1)
+        ;
+
+        
+    
+    
+            var circle_marker_5e9ef37043fb7d2c6239c243e1154489 = L.circleMarker(
+                [32.74315355802555, -117.09284254158297],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_75efe59a6fe49b4a169c74177803044b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4782bd984cd810c68ba5de717081b62c = $(`<div id="html_4782bd984cd810c68ba5de717081b62c" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> City Heights East<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 78     </div>`)[0];
+                popup_75efe59a6fe49b4a169c74177803044b.setContent(html_4782bd984cd810c68ba5de717081b62c);
+            
+        
+
+        circle_marker_5e9ef37043fb7d2c6239c243e1154489.bindPopup(popup_75efe59a6fe49b4a169c74177803044b)
+        ;
+
+        
+    
+    
+            var circle_marker_a2a89ba5114c2ea880a46b8befcea546 = L.circleMarker(
+                [32.74698720152862, -117.11293514779368],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_76c5c21c44fc947752619197d0177c0a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07d8e66b185fbd251016eccade693ce6 = $(`<div id="html_07d8e66b185fbd251016eccade693ce6" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> City Heights West<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 164     </div>`)[0];
+                popup_76c5c21c44fc947752619197d0177c0a.setContent(html_07d8e66b185fbd251016eccade693ce6);
+            
+        
+
+        circle_marker_a2a89ba5114c2ea880a46b8befcea546.bindPopup(popup_76c5c21c44fc947752619197d0177c0a)
+        ;
+
+        
+    
+    
+            var circle_marker_446c9a174c41eec7ac244904a323d914 = L.circleMarker(
+                [32.81938865244479, -117.17746967414573],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_5236128485078f48c2f77d999d4d84a7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aa301f8340b2ddcddddac654a0edf46f = $(`<div id="html_aa301f8340b2ddcddddac654a0edf46f" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Clairemont Mesa<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 160     </div>`)[0];
+                popup_5236128485078f48c2f77d999d4d84a7.setContent(html_aa301f8340b2ddcddddac654a0edf46f);
+            
+        
+
+        circle_marker_446c9a174c41eec7ac244904a323d914.bindPopup(popup_5236128485078f48c2f77d999d4d84a7)
+        ;
+
+        
+    
+    
+            var circle_marker_91412e926231ac89ba304921eb9972d5 = L.circleMarker(
+                [32.769392681021486, -117.06938240213748],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_643d94dccc624587e359b075172a754e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e094b44a7d05d03837b16203e11f1045 = $(`<div id="html_e094b44a7d05d03837b16203e11f1045" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> College Area<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 105     </div>`)[0];
+                popup_643d94dccc624587e359b075172a754e.setContent(html_e094b44a7d05d03837b16203e11f1045);
+            
+        
+
+        circle_marker_91412e926231ac89ba304921eb9972d5.bindPopup(popup_643d94dccc624587e359b075172a754e)
+        ;
+
+        
+    
+    
+            var circle_marker_0c0e9410fc8c23bb554329df60773c4d = L.circleMarker(
+                [32.71839098151634, -117.16917597899554],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_bb56e8fd1cc8d2089308cec4a9759d24 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_947062cafdf501c9fd4a5f08f5a8db48 = $(`<div id="html_947062cafdf501c9fd4a5f08f5a8db48" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Columbia<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 30     </div>`)[0];
+                popup_bb56e8fd1cc8d2089308cec4a9759d24.setContent(html_947062cafdf501c9fd4a5f08f5a8db48);
+            
+        
+
+        circle_marker_0c0e9410fc8c23bb554329df60773c4d.bindPopup(popup_bb56e8fd1cc8d2089308cec4a9759d24)
+        ;
+
+        
+    
+    
+            var circle_marker_3b3dba628f1c0b9016aedc989b1349ef = L.circleMarker(
+                [32.71708752245296, -117.15756980677753],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_3d65b558766cc74b10a6a7766ebde936 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a5e98e8fbb9c06f8135dcb9bcbe3dd7 = $(`<div id="html_0a5e98e8fbb9c06f8135dcb9bcbe3dd7" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Core<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 103     </div>`)[0];
+                popup_3d65b558766cc74b10a6a7766ebde936.setContent(html_0a5e98e8fbb9c06f8135dcb9bcbe3dd7);
+            
+        
+
+        circle_marker_3b3dba628f1c0b9016aedc989b1349ef.bindPopup(popup_3d65b558766cc74b10a6a7766ebde936)
+        ;
+
+        
+    
+    
+            var circle_marker_f9999f1748aaaf1c2e021503feb5ca75 = L.circleMarker(
+                [32.72114630948981, -117.15991674454591],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_3f7e0bfafd26120e182c9a5c409b3683 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e91d8befac2f70d6aafe72b85dbe76b1 = $(`<div id="html_e91d8befac2f70d6aafe72b85dbe76b1" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Cortez Hill<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 115     </div>`)[0];
+                popup_3f7e0bfafd26120e182c9a5c409b3683.setContent(html_e91d8befac2f70d6aafe72b85dbe76b1);
+            
+        
+
+        circle_marker_f9999f1748aaaf1c2e021503feb5ca75.bindPopup(popup_3f7e0bfafd26120e182c9a5c409b3683)
+        ;
+
+        
+    
+    
+            var circle_marker_5534e90e07fcde204e29599361472abc = L.circleMarker(
+                [32.74884736638021, -117.05945004755613],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_b0157c0328dc9fd2b4f7f3866a31eacf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f12bf7c5c4ed006ce0751bfea0cdb07 = $(`<div id="html_4f12bf7c5c4ed006ce0751bfea0cdb07" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Darnall<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 34     </div>`)[0];
+                popup_b0157c0328dc9fd2b4f7f3866a31eacf.setContent(html_4f12bf7c5c4ed006ce0751bfea0cdb07);
+            
+        
+
+        circle_marker_5534e90e07fcde204e29599361472abc.bindPopup(popup_b0157c0328dc9fd2b4f7f3866a31eacf)
+        ;
+
+        
+    
+    
+            var circle_marker_ccd24e3bb6f9434147c785b465b5b9c5 = L.circleMarker(
+                [32.786844818546825, -117.07233733379051],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_1379e5b7b37ff56c378b61027dec2c43 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_261ff54394e08fb195845c878b76d13c = $(`<div id="html_261ff54394e08fb195845c878b76d13c" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Del Cerro<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 24     </div>`)[0];
+                popup_1379e5b7b37ff56c378b61027dec2c43.setContent(html_261ff54394e08fb195845c878b76d13c);
+            
+        
+
+        circle_marker_ccd24e3bb6f9434147c785b465b5b9c5.bindPopup(popup_1379e5b7b37ff56c378b61027dec2c43)
+        ;
+
+        
+    
+    
+            var circle_marker_9aff316ab0f88978e1af809a37e83e91 = L.circleMarker(
+                [32.944697292618685, -117.25152208960695],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_b77d135d66671f68ee8d8aeb4a24e907 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a60fa18a1188a8196bbee90b7c5f0917 = $(`<div id="html_a60fa18a1188a8196bbee90b7c5f0917" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Del Mar Heights<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 67     </div>`)[0];
+                popup_b77d135d66671f68ee8d8aeb4a24e907.setContent(html_a60fa18a1188a8196bbee90b7c5f0917);
+            
+        
+
+        circle_marker_9aff316ab0f88978e1af809a37e83e91.bindPopup(popup_b77d135d66671f68ee8d8aeb4a24e907)
+        ;
+
+        
+    
+    
+            var circle_marker_aec98023ecf4f80ae5606767d507115b = L.circleMarker(
+                [32.65186830057533, -116.97738193956229],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_8ca3e9370bcef1559686521f89abbada = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bea4629ad7180de84b487bf6612b9b7a = $(`<div id="html_bea4629ad7180de84b487bf6612b9b7a" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> East Lake<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 4     </div>`)[0];
+                popup_8ca3e9370bcef1559686521f89abbada.setContent(html_bea4629ad7180de84b487bf6612b9b7a);
+            
+        
+
+        circle_marker_aec98023ecf4f80ae5606767d507115b.bindPopup(popup_8ca3e9370bcef1559686521f89abbada)
+        ;
+
+        
+    
+    
+            var circle_marker_b868cc513ea07182b222dba41ecfed31 = L.circleMarker(
+                [32.71130942484312, -117.1543706014062],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_16a4e8198838c7f2dc9e0ba7a7ef6aa9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_089aae83d5fc0beec4167d6e96441cac = $(`<div id="html_089aae83d5fc0beec4167d6e96441cac" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> East Village<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 451     </div>`)[0];
+                popup_16a4e8198838c7f2dc9e0ba7a7ef6aa9.setContent(html_089aae83d5fc0beec4167d6e96441cac);
+            
+        
+
+        circle_marker_b868cc513ea07182b222dba41ecfed31.bindPopup(popup_16a4e8198838c7f2dc9e0ba7a7ef6aa9)
+        ;
+
+        
+    
+    
+            var circle_marker_b82a951b447a72cd1d554a3e8e0d0345 = L.circleMarker(
+                [32.63951, -116.94894500000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_4f90f7b5f1b3cdbf03db6a0e38efbe93 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78bce9f385aed808fc7ac57bf5b4cb57 = $(`<div id="html_78bce9f385aed808fc7ac57bf5b4cb57" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Eastlake Trails<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 2     </div>`)[0];
+                popup_4f90f7b5f1b3cdbf03db6a0e38efbe93.setContent(html_78bce9f385aed808fc7ac57bf5b4cb57);
+            
+        
+
+        circle_marker_b82a951b447a72cd1d554a3e8e0d0345.bindPopup(popup_4f90f7b5f1b3cdbf03db6a0e38efbe93)
+        ;
+
+        
+    
+    
+            var circle_marker_7f99ecf5d4a0ebe08f090b39722f54f0 = L.circleMarker(
+                [32.63753929802127, -116.93948328852305],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_6ce5f1b81af027fb3ba2b6ddb6248247 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3035653dc09bb72c0f6923687c24908 = $(`<div id="html_e3035653dc09bb72c0f6923687c24908" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Eastlake Vistas<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 12     </div>`)[0];
+                popup_6ce5f1b81af027fb3ba2b6ddb6248247.setContent(html_e3035653dc09bb72c0f6923687c24908);
+            
+        
+
+        circle_marker_7f99ecf5d4a0ebe08f090b39722f54f0.bindPopup(popup_6ce5f1b81af027fb3ba2b6ddb6248247)
+        ;
+
+        
+    
+    
+            var circle_marker_601a3cf9bca4675c6053bda0bb72f698 = L.circleMarker(
+                [32.654245, -116.94546],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_96ff0d6c74629295eb02baef96b7e081 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2449a09be0922d9454ea1c8234da2766 = $(`<div id="html_2449a09be0922d9454ea1c8234da2766" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Eastlake Woods<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 2     </div>`)[0];
+                popup_96ff0d6c74629295eb02baef96b7e081.setContent(html_2449a09be0922d9454ea1c8234da2766);
+            
+        
+
+        circle_marker_601a3cf9bca4675c6053bda0bb72f698.bindPopup(popup_96ff0d6c74629295eb02baef96b7e081)
+        ;
+
+        
+    
+    
+            var circle_marker_9b0fe934feebafe33baada8ea746e80d = L.circleMarker(
+                [32.57603703822701, -117.09920955211922],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_e86e03e9a016549d9b0ffbfcb3f01bab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e408a1420f3194e48e9340ca04e92752 = $(`<div id="html_e408a1420f3194e48e9340ca04e92752" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Egger Highlands<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 16     </div>`)[0];
+                popup_e86e03e9a016549d9b0ffbfcb3f01bab.setContent(html_e408a1420f3194e48e9340ca04e92752);
+            
+        
+
+        circle_marker_9b0fe934feebafe33baada8ea746e80d.bindPopup(popup_e86e03e9a016549d9b0ffbfcb3f01bab)
+        ;
+
+        
+    
+    
+            var circle_marker_077a5d0add6f1be0866056da4a12348a = L.circleMarker(
+                [32.75629209451248, -117.07072627550153],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_ccf95c98878ca76a4e27905ee2ce0ac6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_205b7c4cc77059b8e318b43893e503e3 = $(`<div id="html_205b7c4cc77059b8e318b43893e503e3" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> El Cerritos<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 18     </div>`)[0];
+                popup_ccf95c98878ca76a4e27905ee2ce0ac6.setContent(html_205b7c4cc77059b8e318b43893e503e3);
+            
+        
+
+        circle_marker_077a5d0add6f1be0866056da4a12348a.bindPopup(popup_ccf95c98878ca76a4e27905ee2ce0ac6)
+        ;
+
+        
+    
+    
+            var circle_marker_a28b495d8d8b636a6efdb224ee8b29fe = L.circleMarker(
+                [32.714911620851396, -117.07420220527021],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_dafec22f0276ace3bdacb035ab7b715d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_930c7b0d046cfabd6c7aa476bde71a06 = $(`<div id="html_930c7b0d046cfabd6c7aa476bde71a06" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Emerald Hills<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 18     </div>`)[0];
+                popup_dafec22f0276ace3bdacb035ab7b715d.setContent(html_930c7b0d046cfabd6c7aa476bde71a06);
+            
+        
+
+        circle_marker_a28b495d8d8b636a6efdb224ee8b29fe.bindPopup(popup_dafec22f0276ace3bdacb035ab7b715d)
+        ;
+
+        
+    
+    
+            var circle_marker_0485f13de60bdf43c0235a5084d604ef = L.circleMarker(
+                [32.719670223838605, -117.05896130100908],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_cc1d046bedaaa59a992ee9114dce0340 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73f8c8f7e5a74a13c121f70e4d6d3816 = $(`<div id="html_73f8c8f7e5a74a13c121f70e4d6d3816" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Encanto<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 46     </div>`)[0];
+                popup_cc1d046bedaaa59a992ee9114dce0340.setContent(html_73f8c8f7e5a74a13c121f70e4d6d3816);
+            
+        
+
+        circle_marker_0485f13de60bdf43c0235a5084d604ef.bindPopup(popup_cc1d046bedaaa59a992ee9114dce0340)
+        ;
+
+        
+    
+    
+            var circle_marker_c3bc0d0eff2a40fcba363f66ad428280 = L.circleMarker(
+                [32.633217946548854, -116.95825925446157],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_b74d86d72a66295dfeb42cec806943ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a33f946ad738b45c0042840bc2939b1c = $(`<div id="html_a33f946ad738b45c0042840bc2939b1c" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Estlake Greens<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 3     </div>`)[0];
+                popup_b74d86d72a66295dfeb42cec806943ea.setContent(html_a33f946ad738b45c0042840bc2939b1c);
+            
+        
+
+        circle_marker_c3bc0d0eff2a40fcba363f66ad428280.bindPopup(popup_b74d86d72a66295dfeb42cec806943ea)
+        ;
+
+        
+    
+    
+            var circle_marker_0be91b605690a94446b747d19c28cc83 = L.circleMarker(
+                [32.712813013677156, -117.16023036803357],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_46336ea55c664e427888ac58bcc30e0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2703b8a6fc751c2d32c0f524052b39a9 = $(`<div id="html_2703b8a6fc751c2d32c0f524052b39a9" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Gaslamp Quarter<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 276     </div>`)[0];
+                popup_46336ea55c664e427888ac58bcc30e0f.setContent(html_2703b8a6fc751c2d32c0f524052b39a9);
+            
+        
+
+        circle_marker_0be91b605690a94446b747d19c28cc83.bindPopup(popup_46336ea55c664e427888ac58bcc30e0f)
+        ;
+
+        
+    
+    
+            var circle_marker_b1405d716769712a185b125f04b1777e = L.circleMarker(
+                [32.72494773920758, -117.10854720646165],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_9b254862cd1f8918602aa3568477bc92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b349def2f50d1850bf720f4da786e4b = $(`<div id="html_2b349def2f50d1850bf720f4da786e4b" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Gateway<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 19     </div>`)[0];
+                popup_9b254862cd1f8918602aa3568477bc92.setContent(html_2b349def2f50d1850bf720f4da786e4b);
+            
+        
+
+        circle_marker_b1405d716769712a185b125f04b1777e.bindPopup(popup_9b254862cd1f8918602aa3568477bc92)
+        ;
+
+        
+    
+    
+            var circle_marker_339cf2690617d89c9445e748ae636581 = L.circleMarker(
+                [32.70988928944403, -117.1369589260521],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_fc73acdbdc924550ae0f3bead55349a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_17af61d08aa90297c6859babc5759202 = $(`<div id="html_17af61d08aa90297c6859babc5759202" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Grant Hill<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 150     </div>`)[0];
+                popup_fc73acdbdc924550ae0f3bead55349a2.setContent(html_17af61d08aa90297c6859babc5759202);
+            
+        
+
+        circle_marker_339cf2690617d89c9445e748ae636581.bindPopup(popup_fc73acdbdc924550ae0f3bead55349a2)
+        ;
+
+        
+    
+    
+            var circle_marker_59aaa818d458901a184bcacd72ae7143 = L.circleMarker(
+                [32.78643916383194, -117.10072583124601],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_9eb3d620f31b0253f8cb756162781842 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5488780a094c13c88a146440251372de = $(`<div id="html_5488780a094c13c88a146440251372de" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Grantville<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 47     </div>`)[0];
+                popup_9eb3d620f31b0253f8cb756162781842.setContent(html_5488780a094c13c88a146440251372de);
+            
+        
+
+        circle_marker_59aaa818d458901a184bcacd72ae7143.bindPopup(popup_9eb3d620f31b0253f8cb756162781842)
+        ;
+
+        
+    
+    
+            var circle_marker_ad7e97f863dd6e4782e361daee9e4ceb = L.circleMarker(
+                [32.71462453071364, -117.03305205641114],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_e8f19ddcd114883a14ef6aadcf7f6cdb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b2c1731dc38e25202de550ff7c47e79 = $(`<div id="html_3b2c1731dc38e25202de550ff7c47e79" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Jomacha-Lomita<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 20     </div>`)[0];
+                popup_e8f19ddcd114883a14ef6aadcf7f6cdb.setContent(html_3b2c1731dc38e25202de550ff7c47e79);
+            
+        
+
+        circle_marker_ad7e97f863dd6e4782e361daee9e4ceb.bindPopup(popup_e8f19ddcd114883a14ef6aadcf7f6cdb)
+        ;
+
+        
+    
+    
+            var circle_marker_ca97a4a51379463bfc354716ba0e96da = L.circleMarker(
+                [32.82564764765739, -117.14593558586311],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_0583db8bb13829cd7b1542c56918a5a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62934fabd9cff9323234107c8dffc277 = $(`<div id="html_62934fabd9cff9323234107c8dffc277" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Kearny Mesa<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 15     </div>`)[0];
+                popup_0583db8bb13829cd7b1542c56918a5a4.setContent(html_62934fabd9cff9323234107c8dffc277);
+            
+        
+
+        circle_marker_ca97a4a51379463bfc354716ba0e96da.bindPopup(popup_0583db8bb13829cd7b1542c56918a5a4)
+        ;
+
+        
+    
+    
+            var circle_marker_366d265dff70b6fd86aa763543fca5a3 = L.circleMarker(
+                [32.76198085539178, -117.1052427478801],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_448596f07c7f7104c72dbee11b856b62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f1186c96a2f2a922166f7ff8843593d0 = $(`<div id="html_f1186c96a2f2a922166f7ff8843593d0" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Kensington<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 50     </div>`)[0];
+                popup_448596f07c7f7104c72dbee11b856b62.setContent(html_f1186c96a2f2a922166f7ff8843593d0);
+            
+        
+
+        circle_marker_366d265dff70b6fd86aa763543fca5a3.bindPopup(popup_448596f07c7f7104c72dbee11b856b62)
+        ;
+
+        
+    
+    
+            var circle_marker_91fd0063d9afbba0a552c95716823a53 = L.circleMarker(
+                [32.835939504943944, -117.2673657756546],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 87.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_3f9c4db4600fe2471c135816480ef817 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_90a5375c7b1d9840cafd13afd34c00f9 = $(`<div id="html_90a5375c7b1d9840cafd13afd34c00f9" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> La Jolla<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 870     </div>`)[0];
+                popup_3f9c4db4600fe2471c135816480ef817.setContent(html_90a5375c7b1d9840cafd13afd34c00f9);
+            
+        
+
+        circle_marker_91fd0063d9afbba0a552c95716823a53.bindPopup(popup_3f9c4db4600fe2471c135816480ef817)
+        ;
+
+        
+    
+    
+            var circle_marker_8929ef003a4b39c12bdf9ceac45d48a3 = L.circleMarker(
+                [32.86184177155657, -117.23361379596118],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_4c26cad721e7c2d67b7439219b13f606 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d045747a0b4c9f9ab02ad3b87b65444 = $(`<div id="html_7d045747a0b4c9f9ab02ad3b87b65444" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> La Jolla Village<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 48     </div>`)[0];
+                popup_4c26cad721e7c2d67b7439219b13f606.setContent(html_7d045747a0b4c9f9ab02ad3b87b65444);
+            
+        
+
+        circle_marker_8929ef003a4b39c12bdf9ceac45d48a3.bindPopup(popup_4c26cad721e7c2d67b7439219b13f606)
+        ;
+
+        
+    
+    
+            var circle_marker_2b62d0632d06c078653244277a5b089d = L.circleMarker(
+                [32.799845289621565, -117.02111868076365],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_a5ed3a832f7ab65fa535b901a62bd95e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6bc045bf2bd33cc62b6a8cc55323fd06 = $(`<div id="html_6bc045bf2bd33cc62b6a8cc55323fd06" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Lake Murray<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 35     </div>`)[0];
+                popup_a5ed3a832f7ab65fa535b901a62bd95e.setContent(html_6bc045bf2bd33cc62b6a8cc55323fd06);
+            
+        
+
+        circle_marker_2b62d0632d06c078653244277a5b089d.bindPopup(popup_a5ed3a832f7ab65fa535b901a62bd95e)
+        ;
+
+        
+    
+    
+            var circle_marker_9ce862e478fd77da95b5d7fd8f5f7130 = L.circleMarker(
+                [32.695467782512864, -117.0874482074174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_1414584d3d58583734aec163a1ef8569 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44fa6c3c808ef6bc4fe80511929984d4 = $(`<div id="html_44fa6c3c808ef6bc4fe80511929984d4" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Lincoln Park<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 2     </div>`)[0];
+                popup_1414584d3d58583734aec163a1ef8569.setContent(html_44fa6c3c808ef6bc4fe80511929984d4);
+            
+        
+
+        circle_marker_9ce862e478fd77da95b5d7fd8f5f7130.bindPopup(popup_1414584d3d58583734aec163a1ef8569)
+        ;
+
+        
+    
+    
+            var circle_marker_b19df3d563d310b2c548e9169bb19f7f = L.circleMarker(
+                [32.78099549093483, -117.17100303357996],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_58cd81e8d26541ad4619a082e1183ffb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_39290d611ea8ced6c3b09548b94bcf25 = $(`<div id="html_39290d611ea8ced6c3b09548b94bcf25" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Linda Vista<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 130     </div>`)[0];
+                popup_58cd81e8d26541ad4619a082e1183ffb.setContent(html_39290d611ea8ced6c3b09548b94bcf25);
+            
+        
+
+        circle_marker_b19df3d563d310b2c548e9169bb19f7f.bindPopup(popup_58cd81e8d26541ad4619a082e1183ffb)
+        ;
+
+        
+    
+    
+            var circle_marker_441743913ecbfc59c5dab252dc5ba786 = L.circleMarker(
+                [32.72378109230894, -117.16815295713023],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_7e6312eb8fbceaccbc04a3cf03f472d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0178bb55df8b066b513ff00b78a5d0d3 = $(`<div id="html_0178bb55df8b066b513ff00b78a5d0d3" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Little Italy<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 193     </div>`)[0];
+                popup_7e6312eb8fbceaccbc04a3cf03f472d6.setContent(html_0178bb55df8b066b513ff00b78a5d0d3);
+            
+        
+
+        circle_marker_441743913ecbfc59c5dab252dc5ba786.bindPopup(popup_7e6312eb8fbceaccbc04a3cf03f472d6)
+        ;
+
+        
+    
+    
+            var circle_marker_eceaab0f6388155aa6d8cae2dda7a751 = L.circleMarker(
+                [32.746875157460295, -117.23423134720028],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_32f51640b39e129954baf3ee96fb5f7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6ea534ab8aac997507ccca8e4d6cd0cf = $(`<div id="html_6ea534ab8aac997507ccca8e4d6cd0cf" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Loma Portal<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 328     </div>`)[0];
+                popup_32f51640b39e129954baf3ee96fb5f7b.setContent(html_6ea534ab8aac997507ccca8e4d6cd0cf);
+            
+        
+
+        circle_marker_eceaab0f6388155aa6d8cae2dda7a751.bindPopup(popup_32f51640b39e129954baf3ee96fb5f7b)
+        ;
+
+        
+    
+    
+            var circle_marker_65156d83d479fd516860bdbe53182714 = L.circleMarker(
+                [32.631484566194175, -117.02898617042594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_2cfca43ba0727873f3d762204a6e044b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_944aed76a9fbf9e53c945057c525749e = $(`<div id="html_944aed76a9fbf9e53c945057c525749e" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Lynwood Hills<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 7     </div>`)[0];
+                popup_2cfca43ba0727873f3d762204a6e044b.setContent(html_944aed76a9fbf9e53c945057c525749e);
+            
+        
+
+        circle_marker_65156d83d479fd516860bdbe53182714.bindPopup(popup_2cfca43ba0727873f3d762204a6e044b)
+        ;
+
+        
+    
+    
+            var circle_marker_b06fcb5b214d60cb38b18b863943ba6d = L.circleMarker(
+                [32.711554309484086, -117.16547673778838],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_fe7d037adcfbde2215d8baa495cd3312 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_97fcd35d9787bf3cfaa5df126aa66fe7 = $(`<div id="html_97fcd35d9787bf3cfaa5df126aa66fe7" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Marina<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 78     </div>`)[0];
+                popup_fe7d037adcfbde2215d8baa495cd3312.setContent(html_97fcd35d9787bf3cfaa5df126aa66fe7);
+            
+        
+
+        circle_marker_b06fcb5b214d60cb38b18b863943ba6d.bindPopup(popup_fe7d037adcfbde2215d8baa495cd3312)
+        ;
+
+        
+    
+    
+            var circle_marker_f35b80a4cbe5de6d9442c6c79eefddee = L.circleMarker(
+                [32.70206978978724, -117.1362390920704],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_36a04290b690790f1985196d1397e841 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47ea29337d82a96c9b71aa5abd380b97 = $(`<div id="html_47ea29337d82a96c9b71aa5abd380b97" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Memorial<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 84     </div>`)[0];
+                popup_36a04290b690790f1985196d1397e841.setContent(html_47ea29337d82a96c9b71aa5abd380b97);
+            
+        
+
+        circle_marker_f35b80a4cbe5de6d9442c6c79eefddee.bindPopup(popup_36a04290b690790f1985196d1397e841)
+        ;
+
+        
+    
+    
+            var circle_marker_d6284eddc59d6c1099e0ac03c476b4be = L.circleMarker(
+                [32.74266992455649, -117.16406677881815],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 48.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_ec88f786f02ccede83aed9ad44d77018 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2bb1d9f38eee45c7c13e169363d923f = $(`<div id="html_a2bb1d9f38eee45c7c13e169363d923f" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Midtown<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 482     </div>`)[0];
+                popup_ec88f786f02ccede83aed9ad44d77018.setContent(html_a2bb1d9f38eee45c7c13e169363d923f);
+            
+        
+
+        circle_marker_d6284eddc59d6c1099e0ac03c476b4be.bindPopup(popup_ec88f786f02ccede83aed9ad44d77018)
+        ;
+
+        
+    
+    
+            var circle_marker_18f7d7e67d75ca1e22e5e66442542548 = L.circleMarker(
+                [32.72465765335556, -117.22012252286349],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_7972df90ff12f4dd83cd7a28f02574d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0bf72456e3532c7f9a9405e826d2b4b3 = $(`<div id="html_0bf72456e3532c7f9a9405e826d2b4b3" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Midtown District<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 43     </div>`)[0];
+                popup_7972df90ff12f4dd83cd7a28f02574d0.setContent(html_0bf72456e3532c7f9a9405e826d2b4b3);
+            
+        
+
+        circle_marker_18f7d7e67d75ca1e22e5e66442542548.bindPopup(popup_7972df90ff12f4dd83cd7a28f02574d0)
+        ;
+
+        
+    
+    
+            var circle_marker_d099873e749176d4b30d48c3a1b1aff9 = L.circleMarker(
+                [32.91722433058902, -117.14301306084923],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_1535ad20afcdb2859f560be88c073d36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_413fe155cf88d5b41188a1032a348fe1 = $(`<div id="html_413fe155cf88d5b41188a1032a348fe1" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Mira Mesa<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 193     </div>`)[0];
+                popup_1535ad20afcdb2859f560be88c073d36.setContent(html_413fe155cf88d5b41188a1032a348fe1);
+            
+        
+
+        circle_marker_d099873e749176d4b30d48c3a1b1aff9.bindPopup(popup_1535ad20afcdb2859f560be88c073d36)
+        ;
+
+        
+    
+    
+            var circle_marker_79958846d6b53041de69959100f334cf = L.circleMarker(
+                [32.77408086376573, -117.24328203163789],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 181.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_14ad93430510547fd3a52456b48033fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a30d5cbb2343cc6d1b2a9ae31069efb = $(`<div id="html_1a30d5cbb2343cc6d1b2a9ae31069efb" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Mission Bay<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 1811     </div>`)[0];
+                popup_14ad93430510547fd3a52456b48033fb.setContent(html_1a30d5cbb2343cc6d1b2a9ae31069efb);
+            
+        
+
+        circle_marker_79958846d6b53041de69959100f334cf.bindPopup(popup_14ad93430510547fd3a52456b48033fb)
+        ;
+
+        
+    
+    
+            var circle_marker_c6fc8d44f58ae836681ae06d6d1e2692 = L.circleMarker(
+                [32.76945870877991, -117.15602441196896],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_4c32b75120b3885dd68cbb738539ac3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3596d864405e86f972a44871f85288d3 = $(`<div id="html_3596d864405e86f972a44871f85288d3" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Mission Valley<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 47     </div>`)[0];
+                popup_4c32b75120b3885dd68cbb738539ac3c.setContent(html_3596d864405e86f972a44871f85288d3);
+            
+        
+
+        circle_marker_c6fc8d44f58ae836681ae06d6d1e2692.bindPopup(popup_4c32b75120b3885dd68cbb738539ac3c)
+        ;
+
+        
+    
+    
+            var circle_marker_9101eccf2941a1b8bc929e8633cbe730 = L.circleMarker(
+                [32.769534239475384, -117.19183103590916],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_ef3561dda105fd4156043405bc970165 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8dd70fe13acf25548640d8ca0983d505 = $(`<div id="html_8dd70fe13acf25548640d8ca0983d505" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Moreno Mission<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 106     </div>`)[0];
+                popup_ef3561dda105fd4156043405bc970165.setContent(html_8dd70fe13acf25548640d8ca0983d505);
+            
+        
+
+        circle_marker_9101eccf2941a1b8bc929e8633cbe730.bindPopup(popup_ef3561dda105fd4156043405bc970165)
+        ;
+
+        
+    
+    
+            var circle_marker_c08953e312f641809b04a43043e9cc17 = L.circleMarker(
+                [32.711886777261014, -117.10690485331243],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_ce6914f33ba89ebb0ade817ccae74a52 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c8d13958b74bce1113fea67324a5cc5 = $(`<div id="html_6c8d13958b74bce1113fea67324a5cc5" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Mount Hope<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 37     </div>`)[0];
+                popup_ce6914f33ba89ebb0ade817ccae74a52.setContent(html_6c8d13958b74bce1113fea67324a5cc5);
+            
+        
+
+        circle_marker_c08953e312f641809b04a43043e9cc17.bindPopup(popup_ce6914f33ba89ebb0ade817ccae74a52)
+        ;
+
+        
+    
+    
+            var circle_marker_9b0c38f8648077661f41cede843f155d = L.circleMarker(
+                [32.697357270104405, -117.11038883056918],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_7b1ec2f49b61c9a4b0101b0f33b1fd05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_911822cc4093328fc86f265641d9a180 = $(`<div id="html_911822cc4093328fc86f265641d9a180" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Mountain View<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 32     </div>`)[0];
+                popup_7b1ec2f49b61c9a4b0101b0f33b1fd05.setContent(html_911822cc4093328fc86f265641d9a180);
+            
+        
+
+        circle_marker_9b0c38f8648077661f41cede843f155d.bindPopup(popup_7b1ec2f49b61c9a4b0101b0f33b1fd05)
+        ;
+
+        
+    
+    
+            var circle_marker_b558a238be464a3b6bd04f0d93153622 = L.circleMarker(
+                [32.56856516344044, -117.08519966153139],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_e394c689891971519892de065b56fb90 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_287f77d1728e0e3e15d3116b86dff6ea = $(`<div id="html_287f77d1728e0e3e15d3116b86dff6ea" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Nestor<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 10     </div>`)[0];
+                popup_e394c689891971519892de065b56fb90.setContent(html_287f77d1728e0e3e15d3116b86dff6ea);
+            
+        
+
+        circle_marker_b558a238be464a3b6bd04f0d93153622.bindPopup(popup_e394c689891971519892de065b56fb90)
+        ;
+
+        
+    
+    
+            var circle_marker_aef50673135dac407095ff999cd8cc9f = L.circleMarker(
+                [32.76253224733344, -117.11899527525131],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_3fcc821a76e07046508f71e203ad82f6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_306d96b4618ff31fb0afa2a6e09e2e04 = $(`<div id="html_306d96b4618ff31fb0afa2a6e09e2e04" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Normal Heights<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 165     </div>`)[0];
+                popup_3fcc821a76e07046508f71e203ad82f6.setContent(html_306d96b4618ff31fb0afa2a6e09e2e04);
+            
+        
+
+        circle_marker_aef50673135dac407095ff999cd8cc9f.bindPopup(popup_3fcc821a76e07046508f71e203ad82f6)
+        ;
+
+        
+    
+    
+            var circle_marker_c503a5de4515b3099b1badc7b67dcc2d = L.circleMarker(
+                [32.96474137367717, -117.23021573309636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_d0051829cab4d012f301b9881f2bf434 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fab91ff1713f1098ae12de9f52cd33c5 = $(`<div id="html_fab91ff1713f1098ae12de9f52cd33c5" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> North City<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 21     </div>`)[0];
+                popup_d0051829cab4d012f301b9881f2bf434.setContent(html_fab91ff1713f1098ae12de9f52cd33c5);
+            
+        
+
+        circle_marker_c503a5de4515b3099b1badc7b67dcc2d.bindPopup(popup_d0051829cab4d012f301b9881f2bf434)
+        ;
+
+        
+    
+    
+            var circle_marker_ecf2b127b913690f332304f93476cf44 = L.circleMarker(
+                [32.83589229856868, -117.19483535214857],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_0f9779fa7143756cd0ddebf34030a66a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1dd015a45ab83bb8a188231ee212cce3 = $(`<div id="html_1dd015a45ab83bb8a188231ee212cce3" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> North Clairemont<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 104     </div>`)[0];
+                popup_0f9779fa7143756cd0ddebf34030a66a.setContent(html_1dd015a45ab83bb8a188231ee212cce3);
+            
+        
+
+        circle_marker_ecf2b127b913690f332304f93476cf44.bindPopup(popup_0f9779fa7143756cd0ddebf34030a66a)
+        ;
+
+        
+    
+    
+            var circle_marker_9a3058a56afb2952e945bc640082595e = L.circleMarker(
+                [32.74614208418323, -117.13147984208024],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 49.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_752afa6e7ad6be45289fe52e71ed9521 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b16488a8afdffa012efc0f4ab17a6d1 = $(`<div id="html_8b16488a8afdffa012efc0f4ab17a6d1" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> North Hills<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 497     </div>`)[0];
+                popup_752afa6e7ad6be45289fe52e71ed9521.setContent(html_8b16488a8afdffa012efc0f4ab17a6d1);
+            
+        
+
+        circle_marker_9a3058a56afb2952e945bc640082595e.bindPopup(popup_752afa6e7ad6be45289fe52e71ed9521)
+        ;
+
+        
+    
+    
+            var circle_marker_543fb7799a9fed3e6a682237e3b4f2c2 = L.circleMarker(
+                [32.63540619109969, -117.07894979281822],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_87822ff4bb7b443df4a0c7fccf7c1377 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0765802e5c737f2aea41d1a74da5cf9f = $(`<div id="html_0765802e5c737f2aea41d1a74da5cf9f" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Northwest<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 116     </div>`)[0];
+                popup_87822ff4bb7b443df4a0c7fccf7c1377.setContent(html_0765802e5c737f2aea41d1a74da5cf9f);
+            
+        
+
+        circle_marker_543fb7799a9fed3e6a682237e3b4f2c2.bindPopup(popup_87822ff4bb7b443df4a0c7fccf7c1377)
+        ;
+
+        
+    
+    
+            var circle_marker_959410387df5e2784bee2891f5a17792 = L.circleMarker(
+                [32.7387018150734, -117.07004572160658],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_894cdc15bd7dd6dfe182d7dd415c7392 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8b66df496a445c8e01ac0861dcb41f2 = $(`<div id="html_b8b66df496a445c8e01ac0861dcb41f2" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Oak Park<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 26     </div>`)[0];
+                popup_894cdc15bd7dd6dfe182d7dd415c7392.setContent(html_b8b66df496a445c8e01ac0861dcb41f2);
+            
+        
+
+        circle_marker_959410387df5e2784bee2891f5a17792.bindPopup(popup_894cdc15bd7dd6dfe182d7dd415c7392)
+        ;
+
+        
+    
+    
+            var circle_marker_fa5552723a9b409bc41404bf10694f3f = L.circleMarker(
+                [32.74642634476169, -117.24974256606777],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 58.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_e21f02c4518659f2274e0cfabd5ec444 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b860da1b9f738caa1b245ce3df841a0f = $(`<div id="html_b860da1b9f738caa1b245ce3df841a0f" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Ocean Beach<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 587     </div>`)[0];
+                popup_e21f02c4518659f2274e0cfabd5ec444.setContent(html_b860da1b9f738caa1b245ce3df841a0f);
+            
+        
+
+        circle_marker_fa5552723a9b409bc41404bf10694f3f.bindPopup(popup_e21f02c4518659f2274e0cfabd5ec444)
+        ;
+
+        
+    
+    
+            var circle_marker_30a6c71dc455d73458e9f5594f6788a9 = L.circleMarker(
+                [32.75018897466396, -117.18064879760065],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_e02310b6e6b0f9ddc1c67862844b1aa1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9b1f3f58852344e1ed633adf5dda59f = $(`<div id="html_b9b1f3f58852344e1ed633adf5dda59f" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Old Town<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 216     </div>`)[0];
+                popup_e02310b6e6b0f9ddc1c67862844b1aa1.setContent(html_b9b1f3f58852344e1ed633adf5dda59f);
+            
+        
+
+        circle_marker_30a6c71dc455d73458e9f5594f6788a9.bindPopup(popup_e02310b6e6b0f9ddc1c67862844b1aa1)
+        ;
+
+        
+    
+    
+            var circle_marker_e22c0fe626772297ac62961ed45ea0d9 = L.circleMarker(
+                [32.61888719854361, -116.97795765910978],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_e4243581fe98a8ceee548ec9f569b465 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6fcf0d39ae12a8f7f50dda668ee6d04 = $(`<div id="html_d6fcf0d39ae12a8f7f50dda668ee6d04" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Otay Ranch<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 62     </div>`)[0];
+                popup_e4243581fe98a8ceee548ec9f569b465.setContent(html_d6fcf0d39ae12a8f7f50dda668ee6d04);
+            
+        
+
+        circle_marker_e22c0fe626772297ac62961ed45ea0d9.bindPopup(popup_e4243581fe98a8ceee548ec9f569b465)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee4a604c251e89f956bc6024278144b = L.circleMarker(
+                [32.80091197530924, -117.24665533438461],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_08300f3fc6708cf20122aaceb0d78a02 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_853b8f29a9bf879fd398bc507fc11139 = $(`<div id="html_853b8f29a9bf879fd398bc507fc11139" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Pacific Beach<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 1008     </div>`)[0];
+                popup_08300f3fc6708cf20122aaceb0d78a02.setContent(html_853b8f29a9bf879fd398bc507fc11139);
+            
+        
+
+        circle_marker_4ee4a604c251e89f956bc6024278144b.bindPopup(popup_08300f3fc6708cf20122aaceb0d78a02)
+        ;
+
+        
+    
+    
+            var circle_marker_2c69277a930b60fb0d108344a4eee1a5 = L.circleMarker(
+                [32.581393575, -117.076961675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_cde9cb52de1536305539de8c0bddb58f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1cabd2e26a9e440758593c0939f92f74 = $(`<div id="html_1cabd2e26a9e440758593c0939f92f74" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Palm City<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 4     </div>`)[0];
+                popup_cde9cb52de1536305539de8c0bddb58f.setContent(html_1cabd2e26a9e440758593c0939f92f74);
+            
+        
+
+        circle_marker_2c69277a930b60fb0d108344a4eee1a5.bindPopup(popup_cde9cb52de1536305539de8c0bddb58f)
+        ;
+
+        
+    
+    
+            var circle_marker_400d58f3655f89561f13929b77e6ac79 = L.circleMarker(
+                [32.67448847888959, -117.05796638974083],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_a853522978b9abf2c21dd7d95741cc68 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9b633727a4e40e115f7f3a441f704980 = $(`<div id="html_9b633727a4e40e115f7f3a441f704980" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Paradise Hills<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 32     </div>`)[0];
+                popup_a853522978b9abf2c21dd7d95741cc68.setContent(html_9b633727a4e40e115f7f3a441f704980);
+            
+        
+
+        circle_marker_400d58f3655f89561f13929b77e6ac79.bindPopup(popup_a853522978b9abf2c21dd7d95741cc68)
+        ;
+
+        
+    
+    
+            var circle_marker_e1925a7489990e84e02058087c26a432 = L.circleMarker(
+                [32.72735186637246, -117.16326777013049],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_3a871ccaf9448b95bb9e6ebc959773c0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6430ce56e812151414f51167c5d8ae14 = $(`<div id="html_6430ce56e812151414f51167c5d8ae14" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Park West<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 249     </div>`)[0];
+                popup_3a871ccaf9448b95bb9e6ebc959773c0.setContent(html_6430ce56e812151414f51167c5d8ae14);
+            
+        
+
+        circle_marker_e1925a7489990e84e02058087c26a432.bindPopup(popup_3a871ccaf9448b95bb9e6ebc959773c0)
+        ;
+
+        
+    
+    
+            var circle_marker_7d5961e69d64a1dc64848f70c17a4eff = L.circleMarker(
+                [32.63041245854281, -117.01285402886754],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_15d708b6bb762718a7ac5674d8975af0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ba7df4a5ac81fa8176c134deb81e5ad = $(`<div id="html_7ba7df4a5ac81fa8176c134deb81e5ad" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Paseo Ranchoero<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 8     </div>`)[0];
+                popup_15d708b6bb762718a7ac5674d8975af0.setContent(html_7ba7df4a5ac81fa8176c134deb81e5ad);
+            
+        
+
+        circle_marker_7d5961e69d64a1dc64848f70c17a4eff.bindPopup(popup_15d708b6bb762718a7ac5674d8975af0)
+        ;
+
+        
+    
+    
+            var circle_marker_890c00c484d8eef81b36e0d656a75e7d = L.circleMarker(
+                [33.02440952123091, -117.07079391289273],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_a931f4efd0e1825308dc529136835660 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3d510aa555b7199ac8151823169ebc79 = $(`<div id="html_3d510aa555b7199ac8151823169ebc79" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Rancho Bernadino<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 49     </div>`)[0];
+                popup_a931f4efd0e1825308dc529136835660.setContent(html_3d510aa555b7199ac8151823169ebc79);
+            
+        
+
+        circle_marker_890c00c484d8eef81b36e0d656a75e7d.bindPopup(popup_a931f4efd0e1825308dc529136835660)
+        ;
+
+        
+    
+    
+            var circle_marker_fff6bdb25196217912ab126ac891257c = L.circleMarker(
+                [32.6426894921965, -117.01957263645006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_a2ddec69ce5e648c85c9a2a1ac93efd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d5ef0d9de5ff274e2435964242573762 = $(`<div id="html_d5ef0d9de5ff274e2435964242573762" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Rancho Del Rey<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 5     </div>`)[0];
+                popup_a2ddec69ce5e648c85c9a2a1ac93efd5.setContent(html_d5ef0d9de5ff274e2435964242573762);
+            
+        
+
+        circle_marker_fff6bdb25196217912ab126ac891257c.bindPopup(popup_a2ddec69ce5e648c85c9a2a1ac93efd5)
+        ;
+
+        
+    
+    
+            var circle_marker_774d83d8a14c8cf7d2e0c0cd8d05910b = L.circleMarker(
+                [32.969334667953824, -117.13011025324204],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_bac3147f7a310d0d08d788f203e0cbed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_883262755f7164d4776e400a6e163e5a = $(`<div id="html_883262755f7164d4776e400a6e163e5a" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Rancho Penasquitos<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 105     </div>`)[0];
+                popup_bac3147f7a310d0d08d788f203e0cbed.setContent(html_883262755f7164d4776e400a6e163e5a);
+            
+        
+
+        circle_marker_774d83d8a14c8cf7d2e0c0cd8d05910b.bindPopup(popup_bac3147f7a310d0d08d788f203e0cbed)
+        ;
+
+        
+    
+    
+            var circle_marker_d67f8087b6cde7c9893ac89466924993 = L.circleMarker(
+                [32.762696569637065, -117.05515664272917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_cccb4ff2830556eb2fd4cba34f625d12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_24df0093d78610bb2cfc3caca13a3534 = $(`<div id="html_24df0093d78610bb2cfc3caca13a3534" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Rolando<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 44     </div>`)[0];
+                popup_cccb4ff2830556eb2fd4cba34f625d12.setContent(html_24df0093d78610bb2cfc3caca13a3534);
+            
+        
+
+        circle_marker_d67f8087b6cde7c9893ac89466924993.bindPopup(popup_cccb4ff2830556eb2fd4cba34f625d12)
+        ;
+
+        
+    
+    
+            var circle_marker_a13d277d2d16db5aa3b9b5cadb0f4b27 = L.circleMarker(
+                [32.66814845328647, -116.95062196136416],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_04ef86c71f938b8eebaae3dc409528bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99d556730437d1e0ec348fbd769eed68 = $(`<div id="html_99d556730437d1e0ec348fbd769eed68" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Rolling Hills Ranch<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 7     </div>`)[0];
+                popup_04ef86c71f938b8eebaae3dc409528bc.setContent(html_99d556730437d1e0ec348fbd769eed68);
+            
+        
+
+        circle_marker_a13d277d2d16db5aa3b9b5cadb0f4b27.bindPopup(popup_04ef86c71f938b8eebaae3dc409528bc)
+        ;
+
+        
+    
+    
+            var circle_marker_e624986a11e0736c3279dd8d2caed987 = L.circleMarker(
+                [32.73108188101872, -117.22845138573828],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_271d780c70583332725e432380321ce5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d15d4ffb15956d0c895397fc82a9e265 = $(`<div id="html_d15d4ffb15956d0c895397fc82a9e265" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Roseville<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 100     </div>`)[0];
+                popup_271d780c70583332725e432380321ce5.setContent(html_d15d4ffb15956d0c895397fc82a9e265);
+            
+        
+
+        circle_marker_e624986a11e0736c3279dd8d2caed987.bindPopup(popup_271d780c70583332725e432380321ce5)
+        ;
+
+        
+    
+    
+            var circle_marker_db3c95f6eee8182cdf56d288159eefe1 = L.circleMarker(
+                [32.946490768367504, -117.08352554243776],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.4, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_5a62f8b1bef5d43c23f1a603f2a281a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1316fe6122597162275f52b642779d87 = $(`<div id="html_1316fe6122597162275f52b642779d87" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Sabre Springs<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 14     </div>`)[0];
+                popup_5a62f8b1bef5d43c23f1a603f2a281a8.setContent(html_1316fe6122597162275f52b642779d87);
+            
+        
+
+        circle_marker_db3c95f6eee8182cdf56d288159eefe1.bindPopup(popup_5a62f8b1bef5d43c23f1a603f2a281a8)
+        ;
+
+        
+    
+    
+            var circle_marker_5a31e8445c7476d7ba251f7343d36d6a = L.circleMarker(
+                [32.79859151027896, -117.0600863916312],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_8bade7853f78e0933baf0595959fe64c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5db31baaaf3c252354c73d54ad78daca = $(`<div id="html_5db31baaaf3c252354c73d54ad78daca" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> San Carlos<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 59     </div>`)[0];
+                popup_8bade7853f78e0933baf0595959fe64c.setContent(html_5db31baaaf3c252354c73d54ad78daca);
+            
+        
+
+        circle_marker_5a31e8445c7476d7ba251f7343d36d6a.bindPopup(popup_8bade7853f78e0933baf0595959fe64c)
+        ;
+
+        
+    
+    
+            var circle_marker_9a81890f0ca387093491b0063087942e = L.circleMarker(
+                [32.55794638057862, -117.05649305406071],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_95fca61467587d6480f46c2824da2a1a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e09389afb193cfb6ee36d2bff844852e = $(`<div id="html_e09389afb193cfb6ee36d2bff844852e" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> San Ysidro<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 15     </div>`)[0];
+                popup_95fca61467587d6480f46c2824da2a1a.setContent(html_e09389afb193cfb6ee36d2bff844852e);
+            
+        
+
+        circle_marker_9a81890f0ca387093491b0063087942e.bindPopup(popup_95fca61467587d6480f46c2824da2a1a)
+        ;
+
+        
+    
+    
+            var circle_marker_b7fac0494eff292eba9a2edbcf79bd93 = L.circleMarker(
+                [32.91576248043621, -117.07698562350612],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_7b85f8a3580d78bd1a8a6ecb9ba501d8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9afe28ca0cd095a912010d41aa241734 = $(`<div id="html_9afe28ca0cd095a912010d41aa241734" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Scripps Ranch<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 36     </div>`)[0];
+                popup_7b85f8a3580d78bd1a8a6ecb9ba501d8.setContent(html_9afe28ca0cd095a912010d41aa241734);
+            
+        
+
+        circle_marker_b7fac0494eff292eba9a2edbcf79bd93.bindPopup(popup_7b85f8a3580d78bd1a8a6ecb9ba501d8)
+        ;
+
+        
+    
+    
+            var circle_marker_67701a6851715d6f2550309850043882 = L.circleMarker(
+                [32.792730552786985, -117.1372407966967],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_d36a0a55af04cc3ba2929184b1c2c01f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd75daf2cb6e08dda9ff21a91b5e98c2 = $(`<div id="html_bd75daf2cb6e08dda9ff21a91b5e98c2" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Serra Mesa<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 103     </div>`)[0];
+                popup_d36a0a55af04cc3ba2929184b1c2c01f.setContent(html_bd75daf2cb6e08dda9ff21a91b5e98c2);
+            
+        
+
+        circle_marker_67701a6851715d6f2550309850043882.bindPopup(popup_d36a0a55af04cc3ba2929184b1c2c01f)
+        ;
+
+        
+    
+    
+            var circle_marker_9c5caf4c179cf6c14edf21a750f46b4e = L.circleMarker(
+                [32.705804455461085, -117.04382595740752],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_ceac7adf387b339e437d1a1e7ec15476 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_48e4cfe3722c811803c7d45b97201c3e = $(`<div id="html_48e4cfe3722c811803c7d45b97201c3e" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Sky Line<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 11     </div>`)[0];
+                popup_ceac7adf387b339e437d1a1e7ec15476.setContent(html_48e4cfe3722c811803c7d45b97201c3e);
+            
+        
+
+        circle_marker_9c5caf4c179cf6c14edf21a750f46b4e.bindPopup(popup_ceac7adf387b339e437d1a1e7ec15476)
+        ;
+
+        
+    
+    
+            var circle_marker_1417a47bfdf349a4d2bd261c95412bf7 = L.circleMarker(
+                [32.89900423734439, -117.18677259967839],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_ea32a0e0d563a3f0f3390b18ab04aa31 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47cb4aaf19a7f0759186c423b1dd8c60 = $(`<div id="html_47cb4aaf19a7f0759186c423b1dd8c60" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Sorrento Valley<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 16     </div>`)[0];
+                popup_ea32a0e0d563a3f0f3390b18ab04aa31.setContent(html_47cb4aaf19a7f0759186c423b1dd8c60);
+            
+        
+
+        circle_marker_1417a47bfdf349a4d2bd261c95412bf7.bindPopup(popup_ea32a0e0d563a3f0f3390b18ab04aa31)
+        ;
+
+        
+    
+    
+            var circle_marker_1e3e2e764c11f9a360b1506d8fca694e = L.circleMarker(
+                [32.72219810010603, -117.1255540367652],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_813712e4a1875e23f40ba3b459f1a760 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b123f18a7c5e16f470448ea10af97048 = $(`<div id="html_b123f18a7c5e16f470448ea10af97048" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> South Park<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 97     </div>`)[0];
+                popup_813712e4a1875e23f40ba3b459f1a760.setContent(html_b123f18a7c5e16f470448ea10af97048);
+            
+        
+
+        circle_marker_1e3e2e764c11f9a360b1506d8fca694e.bindPopup(popup_813712e4a1875e23f40ba3b459f1a760)
+        ;
+
+        
+    
+    
+            var circle_marker_52f5eb2ad808c32426c047a20756dfa0 = L.circleMarker(
+                [32.69078833416139, -117.10716556113726],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_da014929298407c05709ae0880f98168 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2ee56434e9703e3c0c72b84523b222b0 = $(`<div id="html_2ee56434e9703e3c0c72b84523b222b0" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Southcrest<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 29     </div>`)[0];
+                popup_da014929298407c05709ae0880f98168.setContent(html_2ee56434e9703e3c0c72b84523b222b0);
+            
+        
+
+        circle_marker_52f5eb2ad808c32426c047a20756dfa0.bindPopup(popup_da014929298407c05709ae0880f98168)
+        ;
+
+        
+    
+    
+            var circle_marker_ce38810b3a107f9bef905127b4a5d340 = L.circleMarker(
+                [32.61087399998601, -117.05494429285136],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_d0b4091927c98be359633b0f78dab765 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5087eead1dd383ced12f8921ab82a9ac = $(`<div id="html_5087eead1dd383ced12f8921ab82a9ac" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Southwest<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 57     </div>`)[0];
+                popup_d0b4091927c98be359633b0f78dab765.setContent(html_5087eead1dd383ced12f8921ab82a9ac);
+            
+        
+
+        circle_marker_ce38810b3a107f9bef905127b4a5d340.bindPopup(popup_d0b4091927c98be359633b0f78dab765)
+        ;
+
+        
+    
+    
+            var circle_marker_e4c64be9af34318501e8b4fdfd3604b6 = L.circleMarker(
+                [32.614652536845206, -117.02523269987331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_83a2c297fb2240ec083fc7c23fc6a005 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e53fa21c5e81fe842292b07ecc9fb23b = $(`<div id="html_e53fa21c5e81fe842292b07ecc9fb23b" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Sunbow<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 8     </div>`)[0];
+                popup_83a2c297fb2240ec083fc7c23fc6a005.setContent(html_e53fa21c5e81fe842292b07ecc9fb23b);
+            
+        
+
+        circle_marker_e4c64be9af34318501e8b4fdfd3604b6.bindPopup(popup_83a2c297fb2240ec083fc7c23fc6a005)
+        ;
+
+        
+    
+    
+            var circle_marker_9bccf1a24d2fb2e912cc51d7a0f945b5 = L.circleMarker(
+                [32.7611405992754, -117.08984085297935],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_fde58856e72d2b85cfa16698e1730f80 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7dd04c514e7bb8e3aa5a7b6acae4da1e = $(`<div id="html_7dd04c514e7bb8e3aa5a7b6acae4da1e" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Talmadge<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 39     </div>`)[0];
+                popup_fde58856e72d2b85cfa16698e1730f80.setContent(html_7dd04c514e7bb8e3aa5a7b6acae4da1e);
+            
+        
+
+        circle_marker_9bccf1a24d2fb2e912cc51d7a0f945b5.bindPopup(popup_fde58856e72d2b85cfa16698e1730f80)
+        ;
+
+        
+    
+    
+            var circle_marker_c3444d0d263f7ab5196c8a35bc137ef6 = L.circleMarker(
+                [32.64524378969629, -117.04343904246002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_66beed6056c22ee27c629c9112cadc3c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_95f3885e44ac405c3ba722ef4e64c1b4 = $(`<div id="html_95f3885e44ac405c3ba722ef4e64c1b4" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Terra Nova<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 3     </div>`)[0];
+                popup_66beed6056c22ee27c629c9112cadc3c.setContent(html_95f3885e44ac405c3ba722ef4e64c1b4);
+            
+        
+
+        circle_marker_c3444d0d263f7ab5196c8a35bc137ef6.bindPopup(popup_66beed6056c22ee27c629c9112cadc3c)
+        ;
+
+        
+    
+    
+            var circle_marker_8d4ee813f6149795f5b4db7233db2777 = L.circleMarker(
+                [32.83339196458054, -117.09812662869214],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.3, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_a6cebdd232a42c5a5bcaa4ba30921cd3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f207e9b172d5ca193eac28e81000e49b = $(`<div id="html_f207e9b172d5ca193eac28e81000e49b" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Tierrasanta<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 13     </div>`)[0];
+                popup_a6cebdd232a42c5a5bcaa4ba30921cd3.setContent(html_f207e9b172d5ca193eac28e81000e49b);
+            
+        
+
+        circle_marker_8d4ee813f6149795f5b4db7233db2777.bindPopup(popup_a6cebdd232a42c5a5bcaa4ba30921cd3)
+        ;
+
+        
+    
+    
+            var circle_marker_0b531e2da28ce3c5c43f45c60d92ac5e = L.circleMarker(
+                [32.54076, -117.05359],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_1332150de940291d730a1c5453255bb4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_68377b08420e5fdae5b5fe596b6e99a9 = $(`<div id="html_68377b08420e5fdae5b5fe596b6e99a9" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Tijuana River Valley<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 1     </div>`)[0];
+                popup_1332150de940291d730a1c5453255bb4.setContent(html_68377b08420e5fdae5b5fe596b6e99a9);
+            
+        
+
+        circle_marker_0b531e2da28ce3c5c43f45c60d92ac5e.bindPopup(popup_1332150de940291d730a1c5453255bb4)
+        ;
+
+        
+    
+    
+            var circle_marker_ceaa4b24467c4936098a9dee630b0c7d = L.circleMarker(
+                [32.888000488821774, -117.24633245784165],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_0b26ccd57d4a519c8c38f332ff88fc83 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99fc36c86ae65d0b2460e575f4edb1d6 = $(`<div id="html_99fc36c86ae65d0b2460e575f4edb1d6" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Torrey Pines<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 21     </div>`)[0];
+                popup_0b26ccd57d4a519c8c38f332ff88fc83.setContent(html_99fc36c86ae65d0b2460e575f4edb1d6);
+            
+        
+
+        circle_marker_ceaa4b24467c4936098a9dee630b0c7d.bindPopup(popup_0b26ccd57d4a519c8c38f332ff88fc83)
+        ;
+
+        
+    
+    
+            var circle_marker_a476257a13633abfaa05212574f073ff = L.circleMarker(
+                [32.86157976245331, -117.21411993750893],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_7760e0aa2f5c3b9979206f0003a41631 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a7205d506cabe7f223eb403d8d642eb7 = $(`<div id="html_a7205d506cabe7f223eb403d8d642eb7" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> University City<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 168     </div>`)[0];
+                popup_7760e0aa2f5c3b9979206f0003a41631.setContent(html_a7205d506cabe7f223eb403d8d642eb7);
+            
+        
+
+        circle_marker_a476257a13633abfaa05212574f073ff.bindPopup(popup_7760e0aa2f5c3b9979206f0003a41631)
+        ;
+
+        
+    
+    
+            var circle_marker_11c03641bdb2d534c13f4eaa0226cf21 = L.circleMarker(
+                [32.70212839020751, -117.07884018719561],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_0647a221eb06bcee90ac3009091fa1eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_54b0b2aa100e6dedf42114b73889111e = $(`<div id="html_54b0b2aa100e6dedf42114b73889111e" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Valencia Park<br>     <b>Price Category:</b> Budget-Friendly Area<br>     <b>Number of Listings:</b> 26     </div>`)[0];
+                popup_0647a221eb06bcee90ac3009091fa1eb.setContent(html_54b0b2aa100e6dedf42114b73889111e);
+            
+        
+
+        circle_marker_11c03641bdb2d534c13f4eaa0226cf21.bindPopup(popup_0647a221eb06bcee90ac3009091fa1eb)
+        ;
+
+        
+    
+    
+            var circle_marker_fc2abc8bc126158a79cfe63704b853f0 = L.circleMarker(
+                [32.72733381853237, -117.09097293554434],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_5789fb48ebc8876eb204be2e3edbb0b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78521e478a1799d8f6be4942f7a23773 = $(`<div id="html_78521e478a1799d8f6be4942f7a23773" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Webster<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 19     </div>`)[0];
+                popup_5789fb48ebc8876eb204be2e3edbb0b5.setContent(html_78521e478a1799d8f6be4942f7a23773);
+            
+        
+
+        circle_marker_fc2abc8bc126158a79cfe63704b853f0.bindPopup(popup_5789fb48ebc8876eb204be2e3edbb0b5)
+        ;
+
+        
+    
+    
+            var circle_marker_958521c76bbbc97d54bf33068e29ca18 = L.circleMarker(
+                [32.75856078385268, -117.14878504662188],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_64fbb9f1a6c2d6b92ba0efddedc2a581 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab7f0263b2b1a440481d2c2ce5602c70 = $(`<div id="html_ab7f0263b2b1a440481d2c2ce5602c70" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> West University Heights<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 152     </div>`)[0];
+                popup_64fbb9f1a6c2d6b92ba0efddedc2a581.setContent(html_ab7f0263b2b1a440481d2c2ce5602c70);
+            
+        
+
+        circle_marker_958521c76bbbc97d54bf33068e29ca18.bindPopup(popup_64fbb9f1a6c2d6b92ba0efddedc2a581)
+        ;
+
+        
+    
+    
+            var circle_marker_205924d970a9b8fcfe0203acc0064823 = L.circleMarker(
+                [32.71851205213017, -117.24405035013328],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_735a543d4c09c052d11ab25be601767b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cad888d308444b05cd1732409a770fe0 = $(`<div id="html_cad888d308444b05cd1732409a770fe0" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Wooded Area<br>     <b>Price Category:</b> Prime Area<br>     <b>Number of Listings:</b> 61     </div>`)[0];
+                popup_735a543d4c09c052d11ab25be601767b.setContent(html_cad888d308444b05cd1732409a770fe0);
+            
+        
+
+        circle_marker_205924d970a9b8fcfe0203acc0064823.bindPopup(popup_735a543d4c09c052d11ab25be601767b)
+        ;
+
+        
+    
+    
+            var circle_marker_40e6dfbeb3266a3929579a7d20ff13d6 = L.circleMarker(
+                [32.649295, -116.95017],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.2, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_772e7cebb05751c85d2340e726b01480);
+        
+    
+        var popup_9fac2cc859420637106db1bd2a1b9257 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00658b558da7a834ae66f6a89b60332e = $(`<div id="html_00658b558da7a834ae66f6a89b60332e" style="width: 100.0%; height: 100.0%;">     <b>Neighborhood:</b> Yosemite Dr<br>     <b>Price Category:</b> Mid-Tier Area<br>     <b>Number of Listings:</b> 2     </div>`)[0];
+                popup_9fac2cc859420637106db1bd2a1b9257.setContent(html_00658b558da7a834ae66f6a89b60332e);
+            
+        
+
+        circle_marker_40e6dfbeb3266a3929579a7d20ff13d6.bindPopup(popup_9fac2cc859420637106db1bd2a1b9257)
+        ;
+
+        
+    
+    
+            marker_cluster_772e7cebb05751c85d2340e726b01480.addTo(map_6eb648148e5fcd0feaa6b488876fd489);
+        
+</script>
+</html>
